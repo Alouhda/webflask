@@ -1,13 +1,19 @@
 import random
 
-def random_list():
+def ls_while():
     numbers = list()
-    length = random.randrange(1,10)
-    i = random.randint(10,100)
-    while length != len(numbers):
-        numbers.append(i)
+    length = random.randint(1,10)
+    while len(numbers) != length:
+        numbers.append(random.randint(10,100))
     return(numbers)
-    result = random_list(numbers)
-    print(result)
+print(ls_while())
+
 	
-random_list()
+def ls_for():
+    numbers = list()
+    length = random.randrint(1,11)
+    for i in range(length):
+        numbers.append(random.randint(10,100))
+    return(numbers)
+print(ls_while())
+	
